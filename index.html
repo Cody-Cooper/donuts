@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="libs/materialize/css/materialize.min.css">
+        <link rel="stylesheet" href="styles/css/main.css">
+
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+        <!-- Navigation bar -->
+        <div class="navbar-fixed" id="nav">
+            <nav>
+                <div class="nav-wrapper">
+
+                    <!-- Site name -->
+                    <a href="/" class="brand-logo">
+                        <img src="images/logo.png" class="nav-logo">
+                    </a>
+
+                    <!-- Mobile menu button -->
+                    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+                    <!-- Static menu -->
+                    <ul class="right hide-on-med-and-down table-of-contents">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                    <!-- Mobile menu, make sure it is equal to the statis menu -->
+                    <ul class="side-nav" id="mobile-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Top parralax -->
+        <div id="home" class="parallax-container section scrollspy">
+            <div class="parallax">
+                <img src="images/header.jpg">
+            </div>
+        </div>
+
+        <!-- About section -->
+        <div class="section scrollspy" id="about">
+            <div class="container">
+                <div class="row">
+                    <h2>About us</h2>
+                    <div class="col s12 m10 offset-m1 l8 offset-l2">
+                        <!-- <p class="flow-text center-align">
+                          nothing to see here...
+                        </p> -->
+                    </div>
+                </div>
+
+                <!-- Row with about content -->
+                <div class="row">
+                    <div class="col s12 l10">
+                        <p class="flow-text">
+                            We have a passion for people, particularly happy people! At Legendary Doughnuts we strive to create amazing
+                            and fun doughnuts using quality ingredients and a 'twist' of uniqueness to make people smile while indulging.
+                            We love and support the community from local charities and fund raising, to daily donations to the food bank.
+                            We also support local schools with their school papers, ASB, and reading programs; every student who reads
+                            their required reading minutes is given a free doughnut coupon. We hear from the parents that the children
+                            love this. Our friendly staff looks forward to working with you to put together, that unexpected doughnut
+                            cake or special box of doughnuts to make someones day. Local owners Shannon and Kenny Patten feel blessed
+                            to have the support of family and friends to create a fun and inviting shop for you to enjoy!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="divider"></div>
+        </div>
+
+        <!-- menu -->
+        <div id="menu" class="section scrollspy">
+            <div class="row container">
+                <h2 class="header">Menu</h2>
+                <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+            </div>
+        </div>
+
+        <!-- features -->
+        <div id="features" class="section scrollspy">
+            <div class="row container">
+                <h2 class="header">Features</h2>
+                <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+            </div>
+        </div>
+
+        <!-- contact -->
+        <div id="contact" class="section scrollspy">
+            <div class="row container">
+                <h2 class="header">Contact us</h2>
+                <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+            </div>
+        </div>
+
+
+        <!-- social -->
+        <div id="social" class="section scrollspy">
+        </div>
+
+        <!-- footer -->
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    &copy; 2015 Cody Cooper | <a href="ajax/pages/privacy-policy.html" class="ajax-link">Privacy policy</a>
+
+                    <!-- Social icons -->
+                    <span class="social right">
+                        <a href="http://instagram.com">instagram</a>
+                        <a href="http://twitter.com">twitter</a>
+                        <a href="http://facebook.com">facebook</i></a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="libs/materialize/js/materialize.min.js"></script>
+        <script type="text/javascript" src="scripts/scripts.js"></script>
+        <script src="scripts/build.js"></script>
+    </body>
+</html>
