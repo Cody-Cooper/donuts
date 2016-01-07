@@ -1,0 +1,116 @@
+<div id="ajax-status">
+    <div class="preloader-wrapper large active">
+        <div class="spinner-layer spinner-blue-only actually-green">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a class="btn-floating btn-large waves-effect waves-dark green accent-2" id="close-ajax">
+    <i class="mdi-navigation-close indigo-text text-darken-4"></i>
+</a>
+
+<div class="parallax-container" id="hero">
+    <div class="parallax"><img src="images/works/etch-a-sketch.png" alt="Ice cream"></div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            <h1>
+                JavaScript Etch-A-Sketch
+            </h1>
+            <p class="flow-text grey lighten-4 padding-text">
+                Made for the odin-project.<br>
+                <a href="http://www.theodinproject.com/web-development-101/javascript-and-jquery">Task</a><br>
+                <a href="https://htmlpreview.github.io/?https://github.com/Cody-Cooper/odin-project/blob/master/web-development-101/etch-a-sketch/index.html">Live preview</a>
+            </p>
+            <p class="flow-text">
+                The Odin Project tasked me with creating a 16 by 16 grid of squares that change colors when the mouse hovers over them.
+                Originally, I made a grid out of divs and containers. It worked, but I decided to go for something a little more
+                interactive and let the user choose exactly how big they wanted their sketch area to be. I accomplished this by creating
+                a javascript function that appends a container div to the sketch area's body. I added this step because the easiest way
+                to clear the board is to just delete the entire parent container and then add a new, empty grid. To make the actual grid,
+                I take the height value that the user enters and create that many unordered lists inside the container, and then take
+                the width value and append that many list elements to the unordered list.
+            </p>
+            <p class="flow-text">
+                My next challenge was making the squares change colors when the user hovered over them. I decided that I wanted to have
+                each square change to a random color when the user hovered over them, so wrote a function that generates a random RGB
+                color code. I then used that function to append CSS styles to the square when the user hovered over it. I also made a
+                monochrome mode, where the square gets filled with a light gray color that gets darker each time the user hovers over it.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m6">
+            <img src="images/works/etch-a-sketch-detail/color-fill.png" alt="Color filled grid" class="materialboxed responsive-img" data-caption="The 16x16 grid filled with random colors.">
+        </div>
+        <div class="col s12 m6">
+            <img src="images/works/etch-a-sketch-detail/monochrome-fill.png" alt="Monochrome filled grid" class="materialboxed responsive-img" data-caption="The 16x16 grid filled with a monochrome color design.">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            <p class="flow-text">
+                Now I needed some kind of navigation for the user to change the grid's size, clear the board, or change their fill type.
+                My goals were to keep it as simple and clutter free as I possibly could. I decided to use a minimalistic flex-box sidebar
+                and color code the buttons. I used the same RGB color code function from the fill type to make the random color button
+                change to a random color each time the user hovers it. The monochrome button changes from a light shade of gray to a darker
+                shade of gray (no surprise there), and the new grid and clear buttons change to green and red, respectivly.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m2 offset-m5">
+          <video id="nav-buttons" src="https://zippy.gfycat.com/AmpleMellowBasenji.webm" autoplay controls></video>
+            <!-- <img src="images/works/etch-a-sketch-detail/nav.gif" alt="Gif of the buttons being clicked." class="materialboxed responsive-img" data-caption="Clicking the buttons on the nav."> -->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            <h2>
+              Result
+            </h2>
+            <p class="flow-text">
+                I used a lot of technology I had never used before while making this small web application. I learned how to effectively use
+                flex-box to acheive a desired layout, how to integrate javascript functionality in to a web page, how to append css attributes
+                to an element using jQuery, and creating the RGB code generator helped cement my knowledge of javascript looping in place.
+            </p>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col s12 m10 offset-m1">
+              <div class="divider"></div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col s12 m5 offset-m1">
+            <p class="flow-text">
+                <a href="https://github.com/Cody-Cooper/odin-project/tree/master/web-development-101/etch-a-sketch">View the source <i class="fa fa-github"></i></a>
+            </p>
+        </div>
+        <div class="col s12 m5">
+            <p class="flow-text right-on-med-and-up social">
+                Share:
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+            </p>
+        </div>
+    </div>
+</div>

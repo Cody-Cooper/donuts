@@ -6,7 +6,6 @@ $(document).ready(function(){
           closeOnClick: true
       });
 
-      ScrollAnimations();
 
       (function() {
           var scrollPosition,
@@ -70,20 +69,11 @@ $(document).ready(function(){
           }
       })();
 
-      initializeMap();
 
-      $('.activator, .card-title').on('click', function() {
-          $(this).parents('.card').toggleClass('active');
-      });
+      ScrollAnimations();
+      initMap();
 
-      var tolerance = window.innerHeight * .65;
-
-      $(window).scroll(function() {
-          $('.picture-item:in-viewport(' + tolerance + ')').addClass('animate');
-          $('.team .col:in-viewport(' + tolerance + ')').addClass('animate');
-          $('.masonry .card:in-viewport(' + tolerance + ')').addClass('animate');
-      });
-  });
+    });
 
 
 var map;

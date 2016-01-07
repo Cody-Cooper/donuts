@@ -4,6 +4,7 @@ body {
 
 a {
     color: $primary-color;
+    @include transition(color .3s ease);
 
     &:hover {
         color: lighten($primary-color, 20%);
