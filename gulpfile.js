@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
 var concat = require('gulp-concat');
+var minifyCss = require('gulp-minify-css');
 
 gulp.task('sass', function () {
   return sass('styles/sass/main.scss')
@@ -17,4 +18,10 @@ gulp.task('scripts', function() {
   ])
     .pipe(concat('build.js'))
     .pipe(gulp.dest('scripts'));
+});
+
+gulp.task('minify-css', function() {
+  return gulp.src('styles/css/main.css')
+    .pipe(minifyCss({compatibility: 'ie8'}))
+    .pipe(gulp.dest('styles/css'));
 });
