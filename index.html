@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!--Import Google Icon Font-->
-        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
         <link rel="stylesheet" href="libs/materialize/css/materialize.min.css">
         <link rel="stylesheet" href="styles/css/main.css">
@@ -15,66 +13,56 @@
     <body>
         <div id="wrapper">
 
+            <!-- Navigation bar -->
+            <div class="navbar-fixed" id="nav">
+                <nav>
+                    <div class="nav-wrapper">
 
-        <!-- Navigation bar -->
-        <div class="navbar-fixed" id="nav">
-            <nav>
-                <div class="nav-wrapper">
+                        <!-- Nav bar logo -->
+                        <a href="/" class="brand-logo">
+                            <img src="images/logo.png" class="nav-logo">
+                        </a>
 
-                    <!-- Site name -->
-                    <a href="/" class="brand-logo">
-                        <img src="images/logo.png" class="nav-logo">
-                    </a>
+                        <!-- Mobile menu button -->
+                        <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 
-                    <!-- Mobile menu button -->
-                    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                        <!-- Static menu -->
+                        <ul class="right hide-on-med-and-down table-of-contents">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#locations">Locations</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
 
-                    <!-- Static menu -->
-                    <ul class="right hide-on-med-and-down table-of-contents">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#locations">Locations</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-
-                    <!-- Mobile menu, make sure it is equal to the statis menu -->
-                    <ul class="side-nav" id="mobile-menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#locations">Locations</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-        <!-- Top parralax -->
-        <div id="home" class="parallax-container section scrollspy">
-            <div class="parallax">
-                <img src="images/header.jpg">
-            </div>
-        </div>
-
-        <!-- About section -->
-        <div class="section scrollspy" id="about">
-            <div class="container">
-                <div class="row">
-                    <h2>About us</h2>
-                    <div class="col s12 m10 offset-m1 l8 offset-l2">
-                        <!-- <p class="flow-text center-align">
-                          nothing to see here...
-                        </p> -->
+                        <!-- Mobile menu -->
+                        <ul class="side-nav" id="mobile-menu">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#locations">Locations</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
                     </div>
-                </div>
+                </nav>
+            </div>
 
-                <!-- Row with about content -->
-                <div class="row">
-                    <div class="col s12 l10">
-                        <p class="flow-text">
+            <!-- Top parralax -->
+            <div id="home" class="parallax-container section scrollspy">
+                <div class="parallax">
+                    <img src="images/header.jpg">
+                </div>
+            </div>
+
+            <!-- About section -->
+            <div class="section scrollspy" id="about">
+                <div class="container">
+                    <div class="row">
+                        <h2>About us</h2>
+                        <div class="col s12 m10 offset-m1 l8 offset-l2">
+                            <p class="flow-text center-align">
                             We have a passion for people, particularly happy people! At Legendary Doughnuts we strive to create amazing
                             and fun doughnuts using quality ingredients and a 'twist' of uniqueness to make people smile while indulging.
                             We love and support the community from local charities and fund raising, to daily donations to the food bank.
@@ -82,257 +70,253 @@
                             their required reading minutes is given a free doughnut coupon. We hear from the parents that the children
                             love this. Our friendly staff looks forward to working with you to put together, that unexpected doughnut
                             cake or special box of doughnuts to make someones day. Local owners Shannon and Kenny Patten feel blessed
-                            to have the support of family and friends to create a fun and inviting shop for you to enjoy!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="divider"></div>
-        </div>
-
-        <!-- menu -->
-        <div class="section scrollspy" id="menu">
-            <div class="container">
-                <div class="row">
-                    <h2>Menu</h2>
-                </div>
-            </div>
-            <div class="wide-container">
-                <div class="row">
-                    <div class="col s12 m6">
-                        <div class="card medium">
-                            <div class="card-image">
-                                <img src="images/donuts.jpg">
-                                <span class="card-title">Donuts</span>
-                            </div>
-                            <div class="card-content">
-                                <p>
-                                    The donuts that made us famous
-                                </p>
-                            </div>
-                            <div class="card-action">
-                                <a href="ajax/doughnuts.html" class="ajax-link">This is a link</a>
-                            </div>
+                            to have the support of family and friends to create a fun and inviting shop for you to enjoy!.
+                            </p>
                         </div>
                     </div>
-
-                    <div class="col s12 m6">
-                        <div class="card medium">
-                            <div class="card-image">
-                                <img src="images/cake.jpg">
-                                <span class="card-title">Cakes</span>
-                            </div>
-                            <div class="card-content">
-                                <p>
-                                    Check out our insane donut cakes!
-                                </p>
-                            </div>
-                            <div class="card-action">
-                                <a href="ajax/cakes.html" class="ajax-link">This is a link</a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
+
 
             <div class="container">
                 <div class="divider"></div>
             </div>
 
-        </div>
-
-        <!-- features -->
-        <div id="features" class="section scrollspy">
-            <div class="row container">
-                <h2 class="header">Features</h2>
-            </div>
-            <div class="row">
-                <div class="col s12 m3">
-                    <div class="card #b71c1c red darken-4">
-                        <div class="card-content white-text">
-                            <span class="card-title">The News Tribune</span>
-                            <p>
-                                Coming to Sixth Avenue: Legendary Doughnuts, a novelty bakery &#45; August 2012
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a href="http://blog.thenewstribune.com/tntdiner/2012/08/29/coming-to-sixth-avenue-legendary-doughnuts-a-novelty-bakery/">View article</a>
-                        </div>
+            <!-- menu -->
+            <div class="section scrollspy" id="menu">
+                <div class="container">
+                    <div class="row">
+                        <h2>Menu</h2>
                     </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card #b71c1c red darken-4">
-                        <div class="card-content white-text">
-                            <span class="card-title">Examiner</span>
-                            <p>
-                                Legendary Doughnuts finds a home on 6th Ave &#45; December 2012
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a href="http://www.examiner.com/review/legendary-doughnuts-finds-a-home-on-6th-ave">View article</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card #b71c1c red darken-4">
-                        <div class="card-content white-text">
-                            <span class="card-title">Northwest Military</span>
-                            <p>
-                                PHOTOS: First peek inside Legendary Doughnuts on Tacoma&#39;s Sixth Avenue &#45; November 2012
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a href="http://www.northwestmilitary.com/music-and-culture/walkie-talkie-blog/2012/11/first-peek-inside-legendary-doughnuts-in-tacoma/">View article</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card #b71c1c red darken-4">
-                        <div class="card-content white-text">
-                            <span class="card-title">King 5</span>
-                            <p>
-                                Legendary Dougnuts Lives Up Its Name &#45; September 2014
-                            </p>
-                        </div>
-                        <div class="card-action">
-                            <a href="http://www.king5.com/story/entertainment/television/programs/evening-magazine/2014/09/30/legendary-donuts-giant-famous-marshawn-lynch/16483301/">View article</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="divider"></div>
-            </div>
-
-        </div>
-
-        <!-- locations -->
-        <div id="locations" class="section scrollspy">
-            <div class="container contact-details">
-                <div class="row container">
-                    <h2 class="header">Locations</h2>
                 </div>
                 <div class="wide-container">
                     <div class="row">
-                        <div class="col s12">
-                            <!-- Google map container -->
-                            <div id="map"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m6 l4">
-                        <h5>Lakeland Hills/Lake Tapps</h5>
-                        <div class="divider"></div><br>
-                        <address>
-                            1410 Lake Tapps Pkwy E<br>
-                            Auburn, WA 98092
-                        </address>
-                        <p>
-                            (253) 736-0036
-                        </p>
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <h5>Tacoma</h5>
-                        <div class="divider"></div><br>
-                        <address>
-                            2602 6th Ave<br>
-                            Tacoma, WA 98406
-                        </address>
-                        <p>
-                            (253) 327-1327
-                        </p>
-                    </div>
-                    <div class="col s12 m6 l4 modern-connect">
-                        <h5>Covington</h5>
-                        <div class="divider"></div><br>
-                        <address>
-                            27237 172nd Ave SE #109<br>
-                            Covington, WA 98042
-                        </address>
-                        <p>
-                            (253) 220-8007
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- contact -->
-        <div class="section scrollspy" id="contact">
-            <div class="container">
-                <div class="row">
-                    <h2>Contact</h2>
-                    <div class="col s12 m10 offset-m1 l8 offset-l2">
-                        <p class="flow-text center-align">
-                            Give us some feedback!
-                        </p>
-                        <p class="right-align">
-                            <i class="fa fa-info-circle"></i> Last name is not required.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <form class="col s12 m12 l8 offset-l2" action="php/mailer.php" id="contact-form" novalidate>
-                        <!-- This field helps us avoid spam bots, don't remove it -->
-                        <!-- <div class="cant-touch-this">
-                            <input type="text" name="hammertime" tabindex="-1" value="">
-                        </div> -->
-                        <!-- End of anti-spam field -->
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="first-name" name="first-name" type="text" class="required">
-                                <label for="first-name">First name</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="last-name" name="last-name" type="text">
-                                <label for="last-name">Last name</label>
+                        <div class="col s12 m6">
+                            <div class="card medium">
+                                <div class="card-image">
+                                    <img src="images/donuts.jpg">
+                                    <span class="card-title">Donuts</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        The donuts that made us famous
+                                    </p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="ajax/doughnuts.html" class="ajax-link">This is a link</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="email" name="email" type="email" class="required">
-                                <label for="email">Email</label>
+
+                        <div class="col s12 m6">
+                            <div class="card medium">
+                                <div class="card-image">
+                                    <img src="images/cake.jpg">
+                                    <span class="card-title">Cakes</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        Check out our insane donut cakes!
+                                    </p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="ajax/cakes.html" class="ajax-link">This is a link</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <textarea id="message" name="message" class="materialize-textarea required"></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                        </div>
-                        <div class="center-align">
-                            <button type="submit" name="send" class="btn-large disabled">
-                                Send
-                            </button>
-                        </div>
-                    </form>
+
+                    </div>
                 </div>
-            </div>
-        </div>
 
-
-
-        <!-- footer -->
-        <footer class="page-footer">
-            <div class="footer-copyright">
                 <div class="container">
-                    &copy; 2015 Cody Cooper | <a href="ajax/pages/privacy-policy.html" class="ajax-link">Privacy policy</a>
+                    <div class="divider"></div>
+                </div>
 
-                    <!-- Social icons -->
-                    <span class="social right">
-                        <a href="http://instagram.com">instagram</a>
-                        <a href="http://twitter.com">twitter</a>
-                        <a href="http://facebook.com">facebook</i></a>
-                    </span>
+            </div>
+
+            <!-- features -->
+            <div id="features" class="section scrollspy">
+                <div class="row">
+                    <h2 class="header">Features</h2>
+                </div>
+                <div class="row">
+                    <div class="col s12 m3">
+                        <div class="card #b71c1c red darken-4">
+                            <div class="card-content white-text">
+                                <span class="card-title">The News Tribune</span>
+                                <p>
+                                    Coming to Sixth Avenue: Legendary Doughnuts, a novelty bakery &#45; August 2012
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="http://blog.thenewstribune.com/tntdiner/2012/08/29/coming-to-sixth-avenue-legendary-doughnuts-a-novelty-bakery/">View article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m3">
+                        <div class="card #b71c1c red darken-4">
+                            <div class="card-content white-text">
+                                <span class="card-title">Examiner</span>
+                                <p>
+                                    Legendary Doughnuts finds a home on 6th Ave &#45; December 2012
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="http://www.examiner.com/review/legendary-doughnuts-finds-a-home-on-6th-ave">View article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m3">
+                        <div class="card #b71c1c red darken-4">
+                            <div class="card-content white-text">
+                                <span class="card-title">Northwest Military</span>
+                                <p>
+                                    First peek inside Legendary Doughnuts on Tacoma&#39;s Sixth Avenue &#45; November 2012
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="http://www.northwestmilitary.com/music-and-culture/walkie-talkie-blog/2012/11/first-peek-inside-legendary-doughnuts-in-tacoma/">View article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m3">
+                        <div class="card #b71c1c red darken-4">
+                            <div class="card-content white-text">
+                                <span class="card-title">King 5</span>
+                                <p>
+                                    Legendary Dougnuts Lives Up Its Name &#45; September 2014
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="http://www.king5.com/story/entertainment/television/programs/evening-magazine/2014/09/30/legendary-donuts-giant-famous-marshawn-lynch/16483301/">View article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="divider"></div>
+                </div>
+
+            </div>
+
+            <!-- locations -->
+            <div id="locations" class="section scrollspy">
+                <div class="container contact-details">
+                    <div class="row">
+                        <h2 class="header">Locations</h2>
+                    </div>
+                    <div class="wide-container">
+                        <div class="row">
+                            <div class="col s12">
+                                <!-- Google map container -->
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m6 l4">
+                            <h5>Lakeland Hills/Lake Tapps</h5>
+                            <div class="divider"></div><br>
+                            <address>
+                                1410 Lake Tapps Pkwy E<br>
+                                Auburn, WA 98092
+                            </address>
+                            <p>
+                                (253) 736-0036
+                            </p>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <h5>Tacoma</h5>
+                            <div class="divider"></div><br>
+                            <address>
+                                2602 6th Ave<br>
+                                Tacoma, WA 98406
+                            </address>
+                            <p>
+                                (253) 327-1327
+                            </p>
+                        </div>
+                        <div class="col s12 m6 l4 modern-connect">
+                            <h5>Covington</h5>
+                            <div class="divider"></div><br>
+                            <address>
+                                27237 172nd Ave SE #109<br>
+                                Covington, WA 98042
+                            </address>
+                            <p>
+                                (253) 220-8007
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
+
+            <!-- contact -->
+            <div class="section scrollspy" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <h2>Contact</h2>
+                        <div class="col s12 m10 offset-m1 l8 offset-l2">
+                            <p class="flow-text center-align">
+                                Give us some feedback!
+                            </p>
+                            <p class="right-align">
+                                <i class="fa fa-info-circle"></i> Last name is not required.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form class="col s12 m12 l8 offset-l2" action="php/mailer.php" id="contact-form" novalidate>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="first-name" name="first-name" type="text" class="required">
+                                    <label for="first-name">First name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="last-name" name="last-name" type="text">
+                                    <label for="last-name">Last name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" name="email" type="email" class="required">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="message" name="message" class="materialize-textarea required"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="center-align">
+                                <button type="submit" name="send" class="btn-large disabled">
+                                    Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- footer -->
+            <footer class="page-footer">
+                <div class="footer-copyright">
+                    <div class="container">
+                        &copy; 2015 Cody Cooper | <a href="ajax/pages/privacy-policy.html" class="ajax-link">Privacy policy</a>
+
+                        <!-- Social icons -->
+                        <span class="social right">
+                            <a href="http://instagram.com">instagram</a>
+                            <a href="http://twitter.com">twitter</a>
+                            <a href="http://facebook.com">facebook</i></a>
+                        </span>
+                    </div>
+                </div>
+            </footer>
 
         </div>
 

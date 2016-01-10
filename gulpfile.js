@@ -13,7 +13,7 @@ gulp.task('sass', function () {
 gulp.task('scripts', function() {
   return gulp.src([
       'libs/jquery/jquery-2.1.1.min.js',
-      'libs/materialize/js/materialize.min.js',
+      'libs/materialize/js/materialize.custom.min.js',
       'scripts/scripts.js'
   ])
     .pipe(concat('build.js'))
